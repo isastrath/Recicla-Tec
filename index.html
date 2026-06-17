@@ -24,7 +24,7 @@
         <nav>
 <a href="http://ceepcianorte.com.br">Início</a>
 <a href="#">Cursos</a>
-<a href="">E-Lixo (Descarte)</a>
+<a href="#">E-Lixo (Descarte)</a>
         </nav>
     </header>
     <div class="hero">
@@ -42,6 +42,29 @@
         <input type="text" id="nome" name="nome" required>
 
         <label for="contato">E-mail ou WhatsApp</label>
+        <input type="text" id="contato" name="contato" required>
+
+        <label for="tipo_equipamento">Tipo de equipamento:</label>
+        <select id="tipo_equipamento" name="tipo_equipamento" required>
+            <option value="">Seleciona...</option>
+            <option value="computador">Computador / Notebook</option>
+            <option value="celular">Celular / Tablet</option>
+            <option value="periferico">Periféricos (Teclado, Mouse, Cabos)</option>
+            <option value="bateria">Pilhas e Baterias</option>
+            <option value="outro">Outros (Especifique abaixo)</option>
+        </select>
+        <label for="estado">Estado do Equipamento:</label>
+        <select id="estado" name="estado" required
+            <option value="funcionamento">Funcionando (Doação)</option>
+            <option value="estragado">Estragado(Descarte/Reciclagem)</option>
+            <option value="parcial">Funcionando parcialmente (Pode render peças)</option>
+    </select>
+
+    <label for="descricao">Descrição (Marca/ Modelo/ Problema se houver):</label>
+    <textarea name="descricao" name="descricao" rows="4"></textarea>
+
+    <button type="submit">Registrar Equipamento"</button>
+    
     </form>
   </div>
 </body>
